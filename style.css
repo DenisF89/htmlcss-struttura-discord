@@ -108,3 +108,34 @@ header{
 #blocco_5{
     min-height:750px;
 }
+
+footer{
+    background-color: rgb(22, 22, 22);
+    padding-top: 5px;
+    }
+
+.red{
+    min-height: 400px;
+    background-color: red;
+    width:28%;
+}
+.acqua{
+    background-color: aqua;
+    width:18%;
+}
+#blocco_6{
+    align-items: flex-start;
+    border-bottom: 1px solid grey;
+}
+
+#footer_menu{
+    background-color: aquamarine;
+    min-height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#blocco_7{
+    min-height: 60px;
+    align-items: flex-end;
+}
