@@ -8,74 +8,15 @@ body{
     background-color: rgb(235, 235, 235);
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* -------------------------------CLASSI BOX--------------------------- */
+
 .boxed{margin: 0 auto;}
-
-header{
-    background-color: rgb(150, 255, 255);
-    padding-bottom:2px;
-}
-
-#blocco_0{
-    height:50px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#nav{
-    display: flex;
-    width: 1000px;
-    height: 30px;
-    background-color: orange;
-    font-size: 12px;
-}
-
-.dashed{
-    border: 1px dashed black;
-}
-
-#nav div{
-    display: flex;
-    align-items: center;
-    padding: 0 5px;
-}
-#logo{
-    width: 20%;
-    justify-content: flex-start;
-}
-#menu{
-    width:60%;
-    justify-content: center;
-}
-#login{
-    width:20%;
-    justify-content: flex-end;
-}
-#menu a{
-    margin:0 5px;
-}
-
-#blocco_1{
-    background-color: blue;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    min-height:400px;
-}
-
-#main_content{
-    background-color: rgb(238, 116, 216);
-    min-height: 300px;
-    width: 800px;
-}
-
-#blocco_2, #blocco_4{
-    background-color: white;
-}
-#blocco_3, #blocco_5{
-    background-color: rgb(192, 192, 192);
-   
-}
+.dashed{border: 1px dashed black;}
 .flexbox{
     min-height: 450px;
     display:flex;
@@ -89,53 +30,127 @@ header{
     display: flex;
 }
 
-.azzurro{
-    background-color: rgb(0, 195, 255);
-    min-height: 400px;
-    width:67%;
+/* ---------------------------------HEADER--------------------------------- */
+
+header{
+    background-color: rgb(150, 255, 255);
+    padding-bottom:2px;
 }
-.pink{
-    background-color: pink;
-    min-height: 400px;
-    width:33%;
+
+#blocco_0{
+    min-height:50px;
 }
-.green{
-    background-color: green;
-    min-height: 700px;
-    width:100%;
+
+    #nav{
+        min-height: 30px;
+        background-color: orange;
+        font-size: 12px;
+    }
+
+    #nav div{
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    #logo{
+        width: 20%;
+        justify-content: flex-start;
+    }
+
+    #menu{
+        width:60%;
+        justify-content: center;
+    } 
+
+    #login{
+        width:20%;
+        justify-content: flex-end;
+    }
+
+    #menu a{
+        margin:0 5px;
+    }
+
+#blocco_1{
+    background-color: blue;
+    min-height:400px;
 }
+
+    #main_content{
+        background-color: rgb(238, 116, 216);
+        min-height: 300px;
+        width: 800px;
+    }
+
+/* ----------------------------MAIN---------------------------- */
+
+#blocco_2, #blocco_4{
+    background-color: white;
+}
+#blocco_3, #blocco_5{
+    background-color: rgb(192, 192, 192);
+}
+
+    .azzurro{
+        background-color: rgb(0, 195, 255);
+        min-height: 400px;
+        width:67%;
+    }
+
+    .pink{
+        background-color: pink;
+        min-height: 400px;
+        width:33%;
+    }
 
 #blocco_5{
     min-height:750px;
 }
+
+    .green{
+        background-color: green;
+        min-height: 700px;
+        width:100%;
+    }
+
+/* -----------------------------FOOTER------------------------------ */
 
 footer{
     background-color: rgb(22, 22, 22);
     padding-top: 5px;
     }
 
-.red{
-    min-height: 400px;
-    background-color: red;
-    width:28%;
-}
-.acqua{
-    background-color: aqua;
-    width:18%;
-}
 #blocco_6{
     align-items: flex-start;
     border-bottom: 1px solid grey;
 }
 
-#footer_menu{
-    background-color: aquamarine;
-    min-height:40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .red{
+        min-height: 400px;
+        background-color: red;
+        width:28%;
+    }
+
+    .acqua{
+        background-color: aqua;
+        width:18%;
+    }
+
 #blocco_7{
     min-height: 60px;
     align-items: flex-end;
 }
+
+    #footer_menu{
+        background-color: aquamarine;
+        min-height:40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #bottone_sx, #bottone_dx{
+        background-color: rgb(183, 183, 183);
+        padding: 2px;
+    }
