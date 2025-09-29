@@ -5,9 +5,8 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 235, 235);
+    background-color: white;
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -15,19 +14,18 @@ a{
 
 /* -------------------------------CLASSI BOX--------------------------- */
 
-.boxed{margin: 0 auto;}
-.dashed{border: 1px dashed black;}
+.dashed{border: 2px dashed black;}
+
 .flexbox{
-    min-height: 450px;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    min-height: 400px;
 }
 
-.container{
-    min-height: 400px;
-    width:1000px;
+.boxed{
     display: flex;
+    flex:0.6;
+    margin: 20px auto;
 }
 
 /* ---------------------------------HEADER--------------------------------- */
@@ -42,9 +40,9 @@ header{
 }
 
     #nav{
-        min-height: 30px;
         background-color: orange;
         font-size: 12px;
+        margin: 10px auto;
     }
 
     #nav div{
@@ -54,103 +52,90 @@ header{
     }
 
     #logo{
-        width: 20%;
+        flex:1;
         justify-content: flex-start;
     }
 
     #menu{
-        width:60%;
-        justify-content: center;
+        flex:3;
+        justify-content:center;
+        gap: 30px;
     } 
 
     #login{
-        width:20%;
+        flex:1;
         justify-content: flex-end;
-    }
-
-    #menu a{
-        margin:0 5px;
     }
 
 #blocco_1{
     background-color: blue;
-    min-height:400px;
 }
 
     #main_content{
         background-color: rgb(238, 116, 216);
-        min-height: 300px;
-        width: 800px;
+        flex:0.8;
+        margin: 20px auto;
     }
 
 /* ----------------------------MAIN---------------------------- */
 
-#blocco_2, #blocco_4{
+/* #blocco_2, #blocco_4{
     background-color: white;
-}
+} */
 #blocco_3, #blocco_5{
     background-color: rgb(192, 192, 192);
 }
 
     .azzurro{
         background-color: rgb(0, 195, 255);
-        min-height: 400px;
-        width:67%;
+        flex:2;
     }
 
-    .pink{
+    .rosa{
         background-color: pink;
-        min-height: 400px;
-        width:33%;
+        flex:1;
     }
 
 #blocco_5{
-    min-height:750px;
+    min-height:700px;
 }
 
-    .green{
+    .verde{
         background-color: green;
-        min-height: 700px;
-        width:100%;
+        flex:1;
     }
 
 /* -----------------------------FOOTER------------------------------ */
 
 footer{
     background-color: rgb(22, 22, 22);
-    padding-top: 5px;
     }
 
 #blocco_6{
-    align-items: flex-start;
     border-bottom: 1px solid grey;
 }
-
-    .red{
-        min-height: 400px;
-        background-color: red;
-        width:28%;
+    #footer_colonne{
+        margin-top:5px;
     }
-
-    .acqua{
+    #footer_colonne div{
         background-color: aqua;
-        width:18%;
+        flex:1;
+    }
+    #footer_colonne div:first-child{
+        background-color: red;
+        flex:2;
     }
 
 #blocco_7{
     min-height: 60px;
-    align-items: flex-end;
 }
-
     #footer_menu{
         background-color: aquamarine;
-        min-height:40px;
-        display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom:0;
     }
-
     #bottone_sx, #bottone_dx{
         background-color: rgb(183, 183, 183);
-        padding: 2px;
+        padding: 3px;
     }
