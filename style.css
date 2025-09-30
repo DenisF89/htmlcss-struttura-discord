@@ -19,7 +19,7 @@ a{
 .flexbox{
     display:flex;
     align-items: stretch;
-    min-height: 400px;
+    min-height: 60vh;
 }
 
 .boxed{
@@ -97,7 +97,7 @@ header{
     }
 
 #blocco_5{
-    min-height:700px;
+    min-height: 80vh;
 }
 
     .verde{
